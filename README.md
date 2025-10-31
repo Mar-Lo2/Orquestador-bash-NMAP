@@ -17,7 +17,7 @@ while true; do
     case $opcion in
 
     1)
-        clear && echo "Escaneando..." && nmap -p- -Pn --open $ip >Escaneo_normal.txt && echo -e "Reporte guardado en el fichero Escaneo_normal.txt"
+        clear && echo "Escaneando..." && nmap -p- -sS -Pn --open $ip >Escaneo_normal.txt && echo -e "Reporte guardado en el fichero Escaneo_normal.txt"
         exit
         ;;
 
